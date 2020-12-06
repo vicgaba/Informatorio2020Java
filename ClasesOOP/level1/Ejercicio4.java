@@ -3,10 +3,21 @@ import java.util.Scanner;
 public class Ejercicio4 {
     
     public static void main(String[] args){
-
-        System.out.println("Ingrese un número entero del 1 al 7");
+        int dia = 1;
         Scanner scan = new Scanner(System.in);
-        int dia = scan.nextInt();
+
+        while (dia != 8){
+            System.out.println("Ingrese un número entero del 1 al 7");
+            dia = scan.nextInt();
+            mostrarDia(dia);
+            System.out.println("Si desea salir del programa inserte el número 8");
+            dia = scan.nextInt();
+        }
+        scan.close();
+       
+    }
+
+    public static void mostrarDia(int dia){
 
         switch (dia) {
             case 1: 

@@ -8,7 +8,10 @@ public class Ejercicio3{
         Scanner scan = new Scanner(System.in);
         int nota = scan.nextInt();
         scan.close();
-        
+        calificarEstudiante(nota);     
+    }
+
+    public static void calificarEstudiante(int nota){
         if (nota > 92) {
             System.out.println("Excelente");
         } else if (nota > 84) {
@@ -21,4 +24,5 @@ public class Ejercicio3{
             System.out.println("Desaprobado");
         } 
     }
+
 }
